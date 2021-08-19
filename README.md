@@ -1,1 +1,1 @@
-# Financial-Technical-Indicators
+# Financial-Statistical-Analysis
