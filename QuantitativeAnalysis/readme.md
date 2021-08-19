@@ -19,6 +19,16 @@ There are two main methods for quantitative analysis for value investing, these 
 
 The following explains both methods
 
+## Magic Formula
+This investment philosophy, first introduced in the book “The little book that beats the market” strategy is an investment approach centered around identifying “wonderful stocks” at “bargain price”.
+<br><br>
+The term Wonderful Stock quantified by the metric Return on Invested Capital (ROIC) which measures bang-for-buck on actual capital employed. This excludes excess cash and interes-bearing assets to focus only on assets that actually are used in the business to generate the return.
+<br><br>
+Bargain price which was quantified by earning yield is defined as the ratio of EBIT to enterprise value (Line P/E ratio but capital structure independent)
+<br><br>
+The method goes to invest in the top 20 – 30 companies (This excludes finance and insurance companies), accumulating 2-3 positions per month, over a 12-month period. Then Re-balance the portfolio once a year.
+
+
 
 
 
