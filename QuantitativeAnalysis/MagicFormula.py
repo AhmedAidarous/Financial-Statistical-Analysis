@@ -2,6 +2,8 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
+
+# This ia rhw liar of stocks to rank and see how their magic formula score compares to one another
 tickers = ["AAPL", "BA", "CAT", "CVX", "CSCO", "DIS", "DOW", "XOM",
            "HD", "IBM", "INTC", "JNJ", "KO", "MCD", "MMM", "MRK", "MSFT",
            "NKE", "PFE", "PG", "TRV", "UTX", "UNH", "VZ", "V", "WMT", "WBA"]
