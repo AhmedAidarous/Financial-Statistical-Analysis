@@ -63,7 +63,8 @@ So as you can see, the following are some of the characteristics calculated by t
 # Autoregressive Integrated Moving Average (ARIMA)
 An autoregressive integrated moving average, or ARIMA, is a statistical analysis model that uses time series data to either better understand the data set or to predict future trends. 
 
-A statistical model is autoregressive if it predicts future values based on past values. For example, an ARIMA model might seek to predict a stock's future prices based on its past performance or forecast a company's earnings based on past periods. 
+A statistical model is autoregressive if it predicts future values based on past values. For example, an ARIMA model might seek to predict a stock's future prices based on its past performance or forecast a company's earnings based on past periods. However these models don't work well with historical stock data.
 
-
-
+Now there are two types of ARIMA models, these are:
+<br>• **Non-Seasonal ARIMA**
+<br>• **Seasonal ARIMA**
