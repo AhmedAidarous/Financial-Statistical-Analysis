@@ -24,10 +24,14 @@ Although SMA is a good indicator of trend, however it has some **"weaknesses"**:
 <br>• Extreme anomalies in historical data can skew the SMA significantly
 
 Therefore to avoid these issues, we can use an EWMA (Exponentially Weighted Moving Average), EWMA will allow us to reduce the sort of lag effect from using SMA, and it will put more weight on values that occured more recently. The weighting process will depend on the actual parameters used in the EWMA and the number of periods given a window size. 
-
 The formula to calculate this trend indicator is the following:
-![image](https://user-images.githubusercontent.com/47617364/130439555-55cdc59c-e7ab-49bf-bb98-d91ee3c37d22.png)
+
 <br>
+
+![image](https://user-images.githubusercontent.com/47617364/130439555-55cdc59c-e7ab-49bf-bb98-d91ee3c37d22.png)
+
+<br>
+
 Where:
 <br>• w : Denotes the applied weight
 <br>• x : The input value
@@ -108,6 +112,33 @@ Now say your data is stationary, it's time to choose p , d, and q terms for the 
 
 
 ## ACF and PACF
+An autocorrelation plot (also known as a Correlogram) shows the correlation of a series with itself, lagged by x time units. 
+So the y axis is the correlation and x axis is the number of time units of lag. 
 
+The following are two types of coorellation, these are:
+<br>
+![image](https://user-images.githubusercontent.com/47617364/130510071-e801d65f-c5af-484d-a45c-c4ec480d1a58.png)
+
+<br>
+
+![image](https://user-images.githubusercontent.com/47617364/130510109-f8dfabb0-8f6d-46b3-ae7d-0a3e618e0e86.png)
+<br>
+
+The main priority here is to try to figure out whether we will use the AR or MA components for the ARIMA model, and how many lags we should use. 
+
+
+## Rules of Using ACF and PACF
+Determine if there is an obvious trend in the dataset, if there is, use differencing to deter data, usually the one-lag differencing is the most commonly used difference.
+The following shows this:
+
+<br><br>
+![image](https://user-images.githubusercontent.com/47617364/130519786-b2192378-49e6-4eb3-b408-56d351a793cf.png)
+<br><br>
+ 
+Now after applying the differencing method, we would need to evaluate which model between AR and MA models we should use, as we just discussed, we should use PACF to evaluate the model, and the significant PACF model would be chosen. 
+
+The number of the PCAF model would determine the order of the AR model. 
+E.g. if we find that yesterday’s stock price to predict today’s stock price. We would call this model the first-order autoregression model, this is because were using yesterday’s stock price to predict today’s stock price.
+However, if we use the two previous days to predict tomorrow’s stock price, this is known as second-order autoregression model.
 
 
