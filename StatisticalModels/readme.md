@@ -44,3 +44,19 @@ The following is an example of using EWMA:
 
 As you can see, the EWMA accounts for peaks of the trend.
 
+# ETS Decomposition
+We can use an additive model when it seems that the trend is more linear, as well as the seasonality and trend components seem to be constant over time, for example, every year there are almost 1000 new passengers. A multiplicative model is more appropriate when we are increasing or decreasing a non-linear rate, so for example, each year the airline exponentially doubles the amount of passengers, and that is something ETS can measure. 
+
+## Using ETS
+To use ETS you need to import the following following module
+
+    pip install statsmodels
+
+If we run the ETS model on the same dataset used above which was airline data, it would look like the following:
+![image](https://user-images.githubusercontent.com/47617364/130442247-f69cbc6e-47f6-46aa-819b-6a836fe8efd0.png)
+
+So as you can see, the following are some of the characteristics calculated by the ETS decomposition:
+<br>• **Trend**
+<br>• **Seasonal**
+<br>• **Residual**
+
