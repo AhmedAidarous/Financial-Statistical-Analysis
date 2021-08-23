@@ -102,9 +102,12 @@ One simple way to do this is through *differencing*, the following explains the 
 ### Differencing
 ![image](https://user-images.githubusercontent.com/47617364/130456740-5cf943ee-1a58-4ab0-bac5-cdcf22229e14.png)
 
-This is the concept of subtracting element with element - 1. You can continue differencing until you reach stationarity, however each differencing step comes at the cost of losing a row of data.
+This is the concept of subtracting element with element - 1. You can continue differencing until you reach stationarity, however each differencing step comes at the cost of losing a row of data. 
+
+Now say your data is stationary, it's time to choose p , d, and q terms for the models. A bit part of this is AutoCorrelation, plots, and partial autoCorrelation plots.
 
 
+## ACF and PACF
 
 
 
