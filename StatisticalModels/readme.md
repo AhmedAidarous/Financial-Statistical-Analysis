@@ -39,8 +39,8 @@ Expanding this formula, you will get:
 
 The added parameter here is alpha (a), this is the smoothing factor.
 
+The following is an example of using EWMA:
+![image](https://user-images.githubusercontent.com/47617364/130440195-091f72fb-ba07-49b8-988e-f7aebc08f7cd.png)
 
-
-
-
+As you can see, the EWMA accounts for peaks of the trend.
 
