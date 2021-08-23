@@ -65,6 +65,46 @@ An autoregressive integrated moving average, or ARIMA, is a statistical analysis
 
 A statistical model is autoregressive if it predicts future values based on past values. For example, an ARIMA model might seek to predict a stock's future prices based on its past performance or forecast a company's earnings based on past periods. However these models don't work well with historical stock data.
 
+
+
 Now there are two types of ARIMA models, these are:
 <br>• **Non-Seasonal ARIMA**
 <br>• **Seasonal ARIMA**
+
+## Non-Seasonal ARIMA
+These models are used on non-seasonal data, and they are denoted as ARIMA (p,d,q) where p,d, and q are non-negative integers. The following describes the three denotes:
+
+**p** : A regression model that utilizes the dependent relationship between a current observation and observations over a previous period. 
+
+**d** : Differencing on observations such as Subtracting an observation from an observation at the previous time step. In order to make the time series stationary.  
+
+**q** : A model that uses the dependency between an observation and a residual error from a moving average model applied to lagged observations. 
+
+
+### Stationary vs Non-Stationary Data
+To effectiely use ARIMA, we need to understand stationarity in our data. What makes a data set stationary is a stationary series has constant **mean and variance over time**. Therefore a stationary dataset will allow our model to predict that the mean and the variance will be the same in future periods. Now the following a few examples of stationary data:
+There are three 
+<br>
+
+![image](https://user-images.githubusercontent.com/47617364/130454799-384a9386-0521-4f91-a6d8-4d0bb91ae58d.png)
+
+![image](https://user-images.githubusercontent.com/47617364/130454985-cb41bec9-2d43-40ae-b0db-ab56fc4f72f8.png)
+
+![image](https://user-images.githubusercontent.com/47617364/130456056-047904e2-0980-451c-bf72-04d78b695ce8.png)
+<br> Visually the wavelengths must be constant
+
+A common way to mathematically test the data, and see if it's stationary is through the use of the **Augmented Dicky-Fuller test**
+
+Now if you've determined that your data is not stationary, you will need to transform ir to be stationary in order to evaluate it and what type of ARIMA terms you will use. 
+
+One simple way to do this is through *differencing*, the following explains the intuition behind the concept:
+
+### Differencing
+![image](https://user-images.githubusercontent.com/47617364/130456740-5cf943ee-1a58-4ab0-bac5-cdcf22229e14.png)
+
+This is the concept of subtracting element with element - 1. You can continue differencing until you reach stationarity, however each differencing step comes at the cost of losing a row of data.
+
+
+
+
+
